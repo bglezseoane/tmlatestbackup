@@ -3,6 +3,13 @@ name = "tmlatestbackup"
 version = "0.1.0"
 authors = ["Borja González Seoane <garaje@glezseoane.es>"]
 edition = "2018"
+license-file = "LICENSE"
+description = "Really simple CLI app to obtain the date of the last Mac OS Time Machine backup"
+readme = "README.md"
+homepage = "https://github.com/bglezseoane/tmlatestbackup"
+repository = "https://github.com/bglezseoane/tmlatestbackup"
+keywords = ["cli", "time-machine", "macos"]
+categories = ["command-line-utilities"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
