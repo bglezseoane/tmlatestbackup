@@ -1,6 +1,6 @@
 [package]
 name = "tmlatestbackup"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Borja González Seoane <garaje@glezseoane.es>"]
 edition = "2018"
 license-file = "LICENSE"
