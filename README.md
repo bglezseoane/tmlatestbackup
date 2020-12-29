@@ -87,8 +87,8 @@ open -W -a '/usr/local/bin/tmlatestbackup' \
 	--stderr "$TMP_OPEN_TMLATESTBACKUP_STDOUT"
 
 # Check and act attending to the process success
-if grep -Fxq 'Error' "$TMP_OPEN_TMLATESTBACKUP_STDOUT" \
-	|| ! grep -Fxq 'Process finished successfully.' "$TMP_OPEN_TMLATESTBACKUP_STDOUT"
+if ! [[ "$(cat "$TMP_OPEN_TMLATESTBACKUP_STDOUT")" \
+	=~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{6}$ ]]
 then
 	>&2 echo "Error using 'tmlatestbackup'."
 	rm "$TMP_OPEN_TMLATESTBACKUP_STDOUT"
